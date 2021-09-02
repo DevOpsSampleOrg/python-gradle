@@ -23,9 +23,10 @@ def ping_path3(path1, path2, path3):
 def ping_path4(path1, path2, path3, path4):
     return returnRequests()
  
- @app.route("/<string:path1>/<string:path2>/<string:path3>/<string:path4>/<string:path5>")
-def ping_path4(path1, path2, path3, path4, path5):
+@app.route("/<string:path1>/<string:path2>/<string:path3>/<string:path4>/<string:path5>")
+def ping_path5(path1, path2, path3, path4, path5):
     return returnRequests()
+
 def returnRequests():
     return {
         "host": request.host,
